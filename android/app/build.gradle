@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.zapweb.notesapp'
+    namespace 'com.mrfreak72.notesapp'
     defaultConfig {
-        applicationId 'com.zapweb.notesapp'
+        applicationId 'com.mrfreak72.notesapp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -1,4 +1,4 @@
-package com.zapweb.notesapp
+package com.mrfreak72.notesapp
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build
