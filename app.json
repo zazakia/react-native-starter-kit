@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "notesapp",
-    "slug": "notesapp",
+    "name": "Zapweb.app",
+    "slug": "zapweb-notes",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/zapweb-logo.svg",
+    "scheme": "zapweb",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,30 +13,38 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/zapweb-logo.svg",
+        "backgroundColor": "#4F46E5"
       },
-      "package": "com.mrfreak72.notesapp"
+      "package": "com.zapweb.notesapp"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/zapweb-logo.svg",
+      "name": "Zapweb.app - Smart Note Taking",
+      "shortName": "Zapweb",
+      "description": "A powerful note-taking app with AI features"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/zapweb-logo.svg",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#4F46E5"
         }
       ]
     ],
+    "scheme": "myapp",
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "supabaseUrl": "https://ilkyxnibclxsgpklhteq.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlsa3l4bmliY2x4c2dwa2xodGVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgxMDUzMzksImV4cCI6MjA3MzY4MTMzOX0.hHXpUs9eEuV6k0fqEqz3P5KMsmJAQI9YiRO568aJArk"
     }
   }
 }

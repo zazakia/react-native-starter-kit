@@ -1,4 +1,4 @@
-package com.mrfreak72.notesapp
+package com.zapweb.notesapp
 
 import android.app.Application
 import android.content.res.Configuration

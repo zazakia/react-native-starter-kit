@@ -26,8 +26,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="myapp"/>
-        <data android:scheme="com.mrfreak72.notesapp"/>
+        <data android:scheme="zapweb"/>
+        <data android:scheme="com.zapweb.notesapp"/>
       </intent-filter>
     </activity>
   </application>

@@ -73,7 +73,7 @@ export const deleteNote = async (noteId: string): Promise<void> => {
 export const updateNote = async (updatedNote: Note): Promise<void> => {
   try {
     const existingNotes = await getNotes();
-    const updatedNotes = existingNotes.map(note => 
+    const updatedNotes = existingNotes.map(note =>
       note.id === updatedNote.id ? updatedNote : note
     );
     await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(updatedNotes));
@@ -81,4 +81,15 @@ export const updateNote = async (updatedNote: Note): Promise<void> => {
     console.error('Error updating note:', error);
     throw error;
   }
-}; 
+};
+
+// Default export containing all storage utilities
+const StorageUtils = {
+  saveNote,
+  getNotes,
+  deleteNote,
+  updateNote,
+  STORAGE_KEY,
+};
+
+export default StorageUtils;

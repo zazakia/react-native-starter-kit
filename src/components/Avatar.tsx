@@ -21,7 +21,7 @@ export default function Avatar({ url, size = 150, onUpload }: Props) {
 
   async function downloadImage(path: string) {
     try {
-      const { data, error } = await supabase.storage.from('avatars').download(path)
+      const { data, error } = await supabase.storage.from('ReactKit01_avatars').download(path)
 
       if (error) {
         throw error
@@ -68,7 +68,7 @@ export default function Avatar({ url, size = 150, onUpload }: Props) {
       const fileExt = image.uri?.split('.').pop()?.toLowerCase() ?? 'jpeg'
       const path = `${Date.now()}.${fileExt}`
       const { data, error: uploadError } = await supabase.storage
-        .from('avatars')
+        .from('ReactKit01_avatars')
         .upload(path, arraybuffer, {
           contentType: image.mimeType ?? 'image/jpeg',
         })

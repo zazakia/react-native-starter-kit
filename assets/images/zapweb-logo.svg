@@ -1,0 +1,10 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="512" cy="512" r="512" fill="#4F46E5"/>
+
+  <!-- Lightning bolt (Zap symbol) -->
+  <path d="M320 256L512 512L384 512L576 768L448 512L576 512L384 256Z" fill="#FFFFFF"/>
+
+  <!-- Letter Z -->
+  <path d="M640 320H768L704 384H832L640 512H768L704 576H832L640 704H768L832 640V576H704V512H832V448H704V384H832L768 320H640Z" fill="#FFFFFF"/>
+</svg>
